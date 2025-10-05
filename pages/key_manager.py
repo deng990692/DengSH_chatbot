@@ -1,9 +1,9 @@
 import streamlit as st
+from auth_utils import require_login
 
+
+require_login()
 st.header("LLM Key Management")
-if "user" not in st.session_state:
-    st.warning("Please login first.")
-    st.stop()
 
 api_key = st.text_input("Gemini API Key", type="password", value=st.session_state.get("gemini_api_key", ""))
 if st.button("Save Key"):

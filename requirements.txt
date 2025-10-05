@@ -2,3 +2,4 @@ streamlit>=1.30.0
 google-generativeai>=0.3.0
 supabase>=2.0.0
 python-dotenv>=1.0.0  # 环境变量管理
+extra-streamlit-components>=0.1.15  # Cookie管理等扩展组件
